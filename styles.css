@@ -6,7 +6,7 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .border-container {
@@ -90,4 +90,122 @@ body {
 
 #placeholder-paragraph {
     color: #737373;
+}
+
+#notes-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#notes-main-container {
+    width: 50%;
+    margin: 16px;
+}
+
+.note-editor-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#notes-create-container {
+    width: 50%;
+    margin: 16px 16px 16px 0;
+}
+
+#notes-main-heading {
+    margin: 0;
+    font-size: xx-large;
+}
+
+.note-container {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 8px 12px;
+}
+
+.note-heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.note-heading {
+    margin: 0;
+}
+
+.note-button {
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    background: none;
+    font-size: large;
+}
+
+.note-button:hover {
+    cursor: pointer;
+    background-color: #272727;
+    transition: 250ms;
+}
+
+.note-button:not(:hover) {
+    background-color: #171717;
+    transition: 250ms;
+}
+
+.note-paragraph {
+    margin: 0;
+    color: #737373;
+}
+
+#notes-create-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notes-button {
+    padding: 8px 16px;
+    color: #e5e5e5;
+    border: 2px solid #222222;
+    background-color: #171717;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-family: "Google Sans Code", sans-serif;
+    font-weight: 600;
+}
+
+.notes-button:hover {
+    cursor: pointer;
+    transition: 250ms;
+    background-color: #272727;
+}
+
+.notes-button:not(:hover) {
+    transition: 250ms;
+}
+
+.notes-text {
+    font-size: small;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    background-color: #171717;
+    margin-bottom: 8px;
+    color: #e5e5e5;
+    font-family: "Google Sans Code", sans-serif;
+    font-weight: 400;
+}
+
+#notes-text-heading {
+    width: 300px;
+    font-size: large;
+    text-align: center;
+    font-weight: 600;
+}
+
+#notes-text-content {
+    width: 500px;
+    height: 400px;
+    font-size: medium;
 }

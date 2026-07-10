@@ -35,9 +35,40 @@
                             Select a module on the left
                         </p>
                     </div>
+                    <div id="notes-container" class="hidden">
+                        <div id="notes-main-container">
+                            <h2 id="notes-main-heading">Your Notes</h2>
+                        </div>
+                        <div id="notes-create-container">
+                            <button class="notes-button" id="notes-create">
+                                Create new Note
+                            </button>
+                            <input
+                                id="notes-text-heading"
+                                class="notes-text"
+                                placeholder="Heading"
+                                hidden
+                            />
+                            <textarea
+                                name="asdf"
+                                id="notes-text-content"
+                                class="notes-text"
+                                placeholder="Content"
+                                hidden
+                            ></textarea>
+                            <button
+                                class="notes-button"
+                                id="notes-finish"
+                                hidden
+                            >
+                                Finish Note
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <script type="module" src="./notes.js"></script>
         <script type="module" src="./script.js"></script>
     </body>
 </html>
